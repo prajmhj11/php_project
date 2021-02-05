@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&family=Raleway:wght@300;400&family=Rubik:wght@300;400&display=swap');
+
+/* Sass Template */
+
+@import './include/variables';
+@import './include/global';
+@import './include/typography';
+@import './include/color';
+
+
+@import './components/carousel.scss';
+@import './components//star-rating-svg.scss';
+@import './components/top-sale.scss';
+
+body{
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 200px;
+}
+.footer{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    min-height: 100px;
+}
+
+.navbar{
+    font-family: $font-rubik;
+    li{
+        font-weight: 300;
+    }
+
+    i:hover{
+        animation: heartBeat;
+        animation-duration: 2s;
+    }
+}

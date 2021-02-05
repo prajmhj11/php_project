@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&family=Raleway:wght@300;400&family=Rubik:wght@300;400&display=swap");
+/* Sass Template */
+/* Global classes */
+button, button:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.font-baloo {
+  font-family: "Baloo Tamma 2", cursive;
+}
+
+.font-rale {
+  font-family: "Raleway", cursice;
+}
+
+.font-rubik {
+  font-family: "Rubik", cursive;
+}
+
+.font-size-12 {
+  font-size: 12px;
+}
+
+.font-size-14 {
+  font-size: 14px;
+}
+
+.font-size-16 {
+  font-size: 16px;
+}
+
+.font-size-20 {
+  font-size: 20px;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+/* Color Template */
+.color-primary {
+  color: #7da2d0;
+}
+
+.color-primary-bg {
+  background-color: #7da2d0;
+}
+
+.color-second {
+  color: #78cbd0;
+}
+
+.color-second-bg {
+  color: #78cbd0;
+}
+
+.color-yellow {
+  color: #c9d64b;
+}
+
+.color-yellow-bg {
+  background-color: #c9d64b;
+}
+
+.slider {
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+.slider .slides {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+.slider .slides::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+.slider .slides::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 10px;
+}
+.slider .slides::-webkit-scrollbar-track {
+  background: transparent;
+}
+.slider .slides > div {
+  width: 100%;
+  height: 300px;
+  flex-shrink: 0;
+  background: #eee;
+  margin-right: 50px;
+  border-radius: 10px;
+  transform-origin: center center;
+  transform: scale(1);
+  transition: transform 0.5s;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+}
+
+.jq-stars {
+  display: inline-block;
+}
+
+.jq-rating-label {
+  font-size: 22px;
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  font-family: helvetica, arial, verdana;
+}
+
+.jq-star {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.jq-star-svg {
+  padding-left: 3px;
+  width: 100%;
+  height: 100%;
+}
+
+.jq-star-svg path {
+  /* stroke: #000; */
+  stroke-linejoin: round;
+}
+
+/* un-used */
+.jq-shadow {
+  -webkit-filter: drop-shadow(-2px -2px 2px #888);
+  filter: drop-shadow(-2px -2px 2px #888);
+}
+
+/* top-sale */
+#top-sale .owl-carousel .item .product a {
+  overflow: hidden;
+}
+#top-sale .owl-carousel .item .product img {
+  transition: transform 0.25s ease;
+}
+#top-sale .owl-carousel .item .product img:hover {
+  transform: scale(1.1);
+}
+#top-sale .owl-carousel .owl-nav button {
+  position: absolute;
+  top: 20%;
+}
+#top-sale .owl-carousel .owl-nav .owl-prev span, #top-sale .owl-carousel .owl-nav .owl-next span {
+  font-size: 35px;
+  padding: 0 1rem;
+  color: #7da2d0;
+}
+#top-sale .owl-carousel .owl-nav .owl-prev {
+  left: 0;
+}
+#top-sale .owl-carousel .owl-nav .owl-prev span {
+  margin-left: -4rem;
+}
+#top-sale .owl-carousel .owl-nav .owl-next {
+  right: 0;
+}
+#top-sale .owl-carousel .owl-nav .owl-next span {
+  margin-right: -4rem;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 200px;
+}
+
+.footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  min-height: 100px;
+}
+
+.navbar {
+  font-family: "Rubik", cursive;
+}
+.navbar li {
+  font-weight: 300;
+}
+.navbar i:hover {
+  animation: heartBeat;
+  animation-duration: 2s;
+}
+
+/*# sourceMappingURL=style.css.map */
